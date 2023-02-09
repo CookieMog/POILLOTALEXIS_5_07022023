@@ -2,10 +2,10 @@
 session_start();
 //var_dump($_SESSION);
 
-require_once("../controllers/user_controller.php");
-require_once("../controllers/pages_controller.php");
-require_once("../controllers/gallery_controller.php");
-require_once("../controllers/comment_controller.php");
+require_once("./controllers/user_controller.php");
+require_once("./controllers/pages_controller.php");
+require_once("./controllers/gallery_controller.php");
+require_once("./controllers/comment_controller.php");
 
 // Middleweare
 

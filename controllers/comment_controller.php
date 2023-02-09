@@ -1,5 +1,5 @@
 <?php
-require_once('../models/comment_model.php');
+require_once('./models/comment_model.php');
 
 function add_comment()
 {
@@ -7,7 +7,7 @@ function add_comment()
     // code
 
     // View
-    require("../views/form_add_comment.php");
+    require("./views/form_add_comment.php");
 }
 
 function store_comment()

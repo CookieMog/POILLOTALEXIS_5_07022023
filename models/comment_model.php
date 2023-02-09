@@ -1,6 +1,6 @@
 <?php
 
-require_once('../models/comment_model.php');
+require_once('./models/comment_model.php');
 
 class comment_model extends model
 {

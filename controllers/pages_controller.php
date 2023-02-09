@@ -2,7 +2,7 @@
 function pageHome()
 {
 
-    require("../views/home.php");
+    require("./views/home.php");
 }
 
 function pageAdmin()
@@ -10,7 +10,7 @@ function pageAdmin()
     CheckAuth();
 
     // View
-    require("../views/dashboard.php");
+    require("./views/dashboard.php");
 }
 
 function pageConnect()
@@ -24,5 +24,5 @@ function pageConnect()
     // CheckAuth();
 
     // View
-    require("../views/connection.php");
+    require("./views/connection.php");
 }

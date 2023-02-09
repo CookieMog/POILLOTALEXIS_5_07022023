@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("./components/head.php") ?>
+<?php include("components/head.php") ?>
 
 <body>
-    <?php include("./components/header.php") ?>
+    <?php include("components/header.php") ?>
     <div class="containers">
         <div class="column1">
             <div class="Introduction">
                 <div class="Photo">
-                    <img src="./images/JFroche.jpg" alt="JFrochePortrait">
+                    <img src="" alt="AlexisPortrait">
                 </div>
                 <div class="Texte">
                     <p>
@@ -22,11 +22,7 @@
                     </p>
                 </div>
             </div>
-            <div class="socials">
-                <i class="fa-brands fa-facebook fa-3x"></i><a href="#">Jean Forteroche</a>
-                <i class="fa-brands fa-twitter fa-3x"></i><a href="#">JeanForterocheOF</a>
-                <i class="fa-brands fa-tumblr fa-3x"></i><a href="#">Jean Forteroche</a>
-            </div>
+
         </div>
         <div class="column2">
             <h1>
@@ -42,7 +38,7 @@
 
 
     <!-- Code injected by live-server -->
-    <?php include("./components/footer.php") ?>
+    <?php include("components/footer.php") ?>
 </body>
 
 </html>
