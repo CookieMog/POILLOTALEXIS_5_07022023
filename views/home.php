@@ -7,10 +7,16 @@
     <?php include("components/header.php") ?>
     <div class="containers">
         <div class="column1">
+            <div class="mobilemenubar">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
             <div class="Introduction">
                 <div class="Photo">
                     <img src="" alt="AlexisPortrait">
                 </div>
+                <h1>
+                    Bienvenue sur mon Portfolio
+                </h1>
                 <div class="Texte">
                     <p>
                         Lorem ipsum dolor sit amet. Ut praesentium tenetur et voluptas
@@ -25,9 +31,7 @@
 
         </div>
         <div class="column2">
-            <h1>
-                Bienvenue sur mon Portfolio
-            </h1>
+
 
 
         </div>

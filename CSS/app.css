@@ -8,12 +8,22 @@ footer {
   align-items: center;
   background: linear-gradient(354deg, #b10a1b, transparent);
 }
-.socials {
+#socials {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
 }
-.socials > a {
-  padding: 15px;
+/* #socials > a {
+ 
+} */
+.Photo {
+  float: right;
+  position: relative;
+}
+.mobilemenubar {
+  display: flex;
+  justify-content: center;
+  border: 3px solid;
+  height: 3vh;
 }
