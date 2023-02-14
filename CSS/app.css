@@ -17,6 +17,10 @@ footer {
 /* #socials > a {
  
 } */
+#banner {
+  display: flex;
+  flex-direction: row;
+}
 .Photo {
   float: right;
   position: relative;
@@ -26,4 +30,52 @@ footer {
   justify-content: center;
   border: 3px solid;
   height: 3vh;
+}
+/*----MobileMenu----*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.dropdown_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown_icon {
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+.dropdown_menu {
+  display: none;
+}
+
+.dropdown_element {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #b10a1b;
+  padding: 5px 30px 5px 30px;
+  width: 10em;
+  height: 3em;
+  border: solid 5px black;
+  z-index: 100;
+  border-radius: 15px;
+}
+
+.dropdown:hover > .dropdown_menu {
+  display: block;
+}
+
+.dropdown:hover .dropdown_icon {
+  transform: rotate(180deg);
 }

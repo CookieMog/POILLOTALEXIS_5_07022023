@@ -8,7 +8,7 @@
     <div class="containers">
         <div class="column1">
             <div class="mobilemenubar">
-                <i class="fa-solid fa-bars fa-2x"></i>
+                <?php include("components/dropdown_menu.php") ?>
             </div>
             <div class="Introduction">
                 <div class="Photo">
