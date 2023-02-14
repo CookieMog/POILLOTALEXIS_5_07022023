@@ -1,8 +1,15 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 footer {
-  width: 100%;
+  margin-top: auto;
+  width: 95vw;
+  position: relative;
   display: flex;
   height: 20vh;
-  margin: auto;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,16 +21,21 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
-/* #socials > a {
- 
-} */
+
 #banner {
   display: flex;
   flex-direction: row;
+  height: 30vh;
+  width: 100%;
+  border: solid 2px black;
+  margin-bottom: 5px;
 }
 .Photo {
   float: right;
   position: relative;
+  height: 15vh;
+  width: 50%;
+  border: solid 2px black;
 }
 .mobilemenubar {
   display: flex;
@@ -78,4 +90,95 @@ a {
 
 .dropdown:hover .dropdown_icon {
   transform: rotate(180deg);
+}
+/*--- Media Queries ---*/
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .NavMenu {
+    display: none;
+  }
+  .column2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 797px) {
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+}
+@media only screen and (min-width: 797px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 1024px) {
+  footer {
+    width: 100%;
+  }
+  .containers {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+  }
+  .column1 {
+    position: relative;
+    width: 66%;
+    left: 30%;
+    height: 100%;
+    display: flex;
+    margin-right: -5px;
+    flex-direction: column;
+  }
+  .column2 {
+    position: relative;
+    width: 33%;
+    right: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .NavMenu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .NavMenu a {
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+    margin: 0.9em;
+    padding: 1.6em;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    will-change: transform;
+    font-size: 1.05rem;
+    box-shadow: -1px 5px 5px 1px rgb(0 0 0 / 90%);
+  }
+  .NavMenuHeader {
+    display: flex;
+    justify-content: center;
+  }
+  #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #socials > a {
+    padding: 70px;
+    padding-left: 10px;
+  }
+  .mobilemenubar {
+    display: none;
+  }
+  .Photo {
+    float: right;
+    position: relative;
+    height: 15vh;
+    width: 30%;
+  }
 }
