@@ -96,16 +96,37 @@ a {
   .NavMenu {
     display: none;
   }
-  .column2 {
+  .NavMenuHeader {
     display: none;
   }
-}
-@media only screen and (min-width: 375px) and (max-width: 797px) {
+  .column1 {
+    display: none;
+  }
+  .Photo {
+    overflow: hidden;
+    float: right;
+    position: relative;
+    height: min-content;
+    width: min-content;
+    right: -6%;
+  }
 }
 @media only screen and (min-width: 375px) and (max-width: 425px) {
+  .Photo {
+    right: 7%;
+  }
 }
-@media only screen and (min-width: 797px) and (max-width: 1024px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .Photo {
+    right: 12%;
+  }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Photo {
+    right: 1%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   footer {
     width: 100%;
@@ -116,30 +137,30 @@ a {
     height: 100%;
     flex-direction: row;
   }
-  .column1 {
+  .column2 {
     position: relative;
     width: 66%;
-    left: 30%;
+    left: 3%;
     height: 100%;
     display: flex;
     margin-right: -5px;
     flex-direction: column;
   }
-  .column2 {
+  .column1 {
     position: relative;
-    width: 33%;
-    right: 66%;
+    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    border: solid 2px red;
+    margin-top: 10px;
   }
   .NavMenu {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    align-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
   }
   .NavMenu a {
     text-transform: uppercase;
@@ -178,7 +199,14 @@ a {
   .Photo {
     float: right;
     position: relative;
-    height: 15vh;
-    width: 30%;
+    height: min-content;
+    width: min-content;
+    right: -6%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .NavMenu a {
+    min-width: 145px;
+    padding: 1.3em;
   }
 }
