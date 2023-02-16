@@ -29,7 +29,8 @@ footer {
   width: 100%;
   border: solid 2px black;
   margin-bottom: 5px;
-  background-color: #f3420d;
+  background: linear-gradient(354deg, #f3420d, #7c6666, transparent);
+  overflow: hidden;
 }
 .Photo {
   float: right;
@@ -97,6 +98,9 @@ a {
 .dropdown:hover .dropdown_icon {
   transform: rotate(180deg);
 }
+
+/*---Login Form---*/
+
 /*--- Media Queries ---*/
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   .NavMenu {
@@ -221,6 +225,48 @@ a {
   }
   img[alt~="imageBanniere3"] {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .Formulaire {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(354deg, #f3420d, #7c6666, transparent);
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+    padding: 65px;
+  }
+  form h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .formcontainer {
+    text-align: left;
+    margin: 24px 50px 12px;
+  }
+  .Formulaire form {
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  }
+  .Formulaire input[type="email"],
+  .Formulaire input[type="password"] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  form button {
+    background-color: #1877f2;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grabbing;
+    width: 100%;
   }
 }
 
